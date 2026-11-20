@@ -26,7 +26,7 @@
 
   .bsd{position:absolute;top:66px;right:96px;font-size:28px;font-weight:700;color:var(--maroon)}
   .wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:62px 90px 92px}
-  .logo{width:660px;margin-top:-6px;mix-blend-mode:multiply}
+  .logo{width:580px;margin-top:-6px;mix-blend-mode:multiply}
   .occasion{margin-top:0;font-size:44px;font-weight:700;line-height:1.25;color:var(--maroon-d)}
   .occasion b{font-weight:900;color:var(--maroon)}
   .divider{display:flex;align-items:center;gap:18px;width:640px;margin:0}
@@ -50,7 +50,13 @@
   .row .g{color:var(--gold-l)}
   .row.place{font-size:52px}
   .sep{color:var(--gold-l);padding:0 18px}
-  .open{margin-top:0;font-family:'Suez One',serif;font-size:62px;color:var(--maroon)}
+  .open{margin-top:0;font-family:'Suez One',serif;font-size:54px;color:var(--maroon)}
+  .sponsor{display:flex;align-items:center;justify-content:center;gap:28px;width:820px;
+    padding-top:18px;border-top:3px solid transparent;
+    border-image:linear-gradient(90deg,transparent,var(--gold),transparent) 1}
+  .sponsor .lbl{font-size:36px;font-weight:700;color:var(--maroon-d)}
+  .sponsor .name{font-family:'Suez One',serif;font-size:60px;color:var(--maroon);line-height:1}
+  .sponsor img{max-height:110px;max-width:260px;object-fit:contain}
   .invite{font-size:38px;font-weight:700;color:var(--maroon-d);margin-top:6px}
   .footer{position:absolute;bottom:74px;left:0;right:0;text-align:center;font-size:34px;font-weight:700;color:var(--gold);
     -webkit-text-stroke:.3px #7a5410}
@@ -85,6 +91,12 @@
     </div>
 
     <div class="open">השיעור פתוח לקהל הרחב</div>
+
+    <div class="sponsor">
+      <span class="lbl">השיעור בחסות</span>
+      <span class="name">מאפיית הכפר</span>
+      <img src="sponsor-logo.png" alt="" onerror="this.remove()">
+    </div>
   </div>
 
 </body>
