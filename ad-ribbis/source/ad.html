@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root{
+    --maroon:#6e0f26; --maroon-d:#4a0918; --gold:#b8892f; --gold-l:#e9cf8c; --cream:#fbf6ea;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1142px;height:1654px}
+  body{
+    background:
+      radial-gradient(ellipse at 50% 35%, #fffdf7 0%, var(--cream) 55%, #f1e6cb 100%);
+    font-family:'Frank Ruhl Libre',serif; color:var(--maroon);
+    position:relative; overflow:hidden;
+  }
+  /* frame */
+  .frame{position:absolute;inset:28px;border:6px solid var(--gold);border-radius:6px}
+  .frame::before{content:"";position:absolute;inset:10px;border:2px solid var(--gold);border-radius:3px}
+  .corner{position:absolute;width:70px;height:70px;border:6px solid var(--maroon)}
+  .c1{top:52px;right:52px;border-left:none;border-bottom:none}
+  .c2{top:52px;left:52px;border-right:none;border-bottom:none}
+  .c3{bottom:52px;right:52px;border-left:none;border-top:none}
+  .c4{bottom:52px;left:52px;border-right:none;border-top:none}
+
+  .bsd{position:absolute;top:66px;right:96px;font-size:28px;font-weight:700;color:var(--maroon)}
+  .wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:62px 90px 92px}
+  .logo{width:660px;margin-top:-6px;mix-blend-mode:multiply}
+  .occasion{margin-top:0;font-size:44px;font-weight:700;line-height:1.25;color:var(--maroon-d)}
+  .occasion b{font-weight:900;color:var(--maroon)}
+  .divider{display:flex;align-items:center;gap:18px;width:640px;margin:0}
+  .divider i{flex:1;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+  .divider span{width:16px;height:16px;background:var(--gold);transform:rotate(45deg)}
+  .title{font-family:'Suez One',serif;font-size:108px;line-height:1.05;white-space:nowrap;color:var(--maroon);
+    text-shadow:0 3px 0 rgba(184,137,47,.35)}
+  .topic{font-family:'Suez One',serif;font-size:140px;line-height:1.05;margin-top:-6px;
+    background:linear-gradient(180deg,#f3dc95 0%,#c9993a 45%,#8f6418 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 4px 0 var(--maroon-d));}
+  .by{margin-top:0;font-size:40px;font-weight:500;color:var(--maroon-d)}
+  .rav{font-size:90px;font-weight:900;line-height:1.1;color:var(--maroon);margin-top:2px}
+  .rav small{font-size:52px;font-weight:700}
+  .ravtitle{font-size:50px;font-weight:700;color:var(--gold);margin-top:4px;
+    -webkit-text-stroke:.4px #7a5410}
+  .details{margin-top:0;width:930px;background:linear-gradient(180deg,#80142e,var(--maroon-d));
+    border:5px solid var(--gold);border-radius:22px;padding:30px 30px 34px;color:#fff;
+    box-shadow:0 10px 0 rgba(74,9,24,.18), inset 0 0 0 3px rgba(233,207,140,.5)}
+  .row{font-size:58px;font-weight:700;line-height:1.35}
+  .row .g{color:var(--gold-l)}
+  .row.place{font-size:52px}
+  .sep{color:var(--gold-l);padding:0 18px}
+  .open{margin-top:0;font-family:'Suez One',serif;font-size:62px;color:var(--maroon)}
+  .invite{font-size:38px;font-weight:700;color:var(--maroon-d);margin-top:6px}
+  .footer{position:absolute;bottom:74px;left:0;right:0;text-align:center;font-size:34px;font-weight:700;color:var(--gold);
+    -webkit-text-stroke:.3px #7a5410}
+</style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+  <div class="bsd">בס״ד</div>
+
+  <div class="wrap">
+    <img class="logo" src="logo.png" alt="">
+
+    <div class="occasion">לרגל סיום לימוד <b>סוגיית רבית</b><br>בכולל ״מגדל עוז״ אלעד</div>
+
+    <div class="divider"><i></i><span></span><i></i></div>
+
+    <div class="blk">
+    <div class="title">שיעור הלכה למעשה</div>
+    <div class="topic">בהלכות רבית</div>
+    </div>
+
+    <div class="blk">
+    <div class="by">את השיעור ימסור</div>
+    <div class="rav">הגאון רבי יעקב לנדו <small>שליט״א</small></div>
+    <div class="ravtitle">רב שכונת גני איילון</div>
+    </div>
+
+    <div class="details">
+      <div class="row">ביום ג׳ הבעל״ט<span class="sep">◆</span>בשעה <span class="g"><span dir="ltr">5:30</span> אחה״צ</span></div>
+      <div class="row place">בבית המדרש ״<span class="g">עוד יוסף חי</span>״ • אלעד</div>
+    </div>
+
+    <div class="open">השיעור פתוח לקהל הרחב</div>
+  </div>
+
+</body>
+</html>
